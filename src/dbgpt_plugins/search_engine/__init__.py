@@ -23,7 +23,7 @@ class AutoGPTSearchEngine(AutoGPTPluginTemplate):
             "This plug-in provides search for Internet information."
         )
         self.search_engine = os.getenv("SEARCH_ENGINE")
-        language = os.getenv("LANGUAGE", "en")
+        language = "zh"
         if self.search_engine is None:
             if language is not None and language == "en":
                 self.search_engine = "google"
